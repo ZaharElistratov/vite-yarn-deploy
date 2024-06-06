@@ -35,8 +35,6 @@ jobs:
         with:
           node-version: 20
           cache: 'yarn'
-      - name: Install Yarn
-        run: npm install -g yarn
       - name: Install dependencies
         run: yarn install --frozen-lockfile
       - name: Build
